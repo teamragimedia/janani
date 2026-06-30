@@ -1,0 +1,834 @@
+/* ============================================
+   CONTACT PAGE STYLES
+   Janani Electricals Pvt. Ltd.
+   ============================================ */
+
+/* CONTACT SECTION */
+.contact-page-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+/* ============================================
+   CONTACT INFO STRIP (3 Cards)
+   ============================================ */
+.contact-info-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.contact-info-strip.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-info-card {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 8px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-info-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.contact-info-card__icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.contact-info-card__icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: #333;
+  stroke-width: 2;
+  fill: none;
+}
+
+.contact-info-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-info-card__label {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #666;
+  letter-spacing: 0.5px;
+}
+
+.contact-info-card__value {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  line-height: 1.5;
+}
+
+.contact-info-card__value a {
+  color: #222;
+  text-decoration: none;
+  border-bottom: 2px solid #005574;
+  transition: color 0.3s ease;
+}
+
+.contact-info-card__value a:hover {
+  color: #005574;
+}
+
+.contact-info-card__sub {
+  font-size: 13px;
+  color: #888;
+}
+
+/* ============================================
+   MAIN 2-COLUMN GRID (Form + Right Panel)
+   ============================================ */
+.contact-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* ============================================
+   CONTACT FORM PANEL (LEFT)
+   ============================================ */
+.contact-form-panel {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.contact-form-panel.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-form-panel .sec-title__tagline {
+  margin-bottom: 30px;
+}
+
+.contact-form-panel .sec-title__title {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.3;
+}
+
+/* ENQUIRY TAGS */
+.enquiry-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 35px;
+  transition: all 0.3s ease;
+}
+
+.enquiry-tag {
+  background: white;
+  border: 2px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #555;
+  text-transform: capitalize;
+}
+
+.enquiry-tag:hover {
+  border-color: #005574;
+  color: #005574;
+}
+
+.enquiry-tag.active {
+  background: #005574;
+  border-color: #005574;
+  color: white;
+}
+
+/* FORM STYLES */
+.contact-form-new {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: all 0.3s ease;
+}
+
+.contact-form-new.hidden {
+  display: none;
+}
+
+.form-row {
+  display: grid;
+  gap: 20px;
+}
+
+.form-row:not(.full) {
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-row.full {
+  grid-template-columns: 1fr;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background: white;
+  color: #333;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #999;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #005574;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+.form-field input.error,
+.form-field textarea.error {
+  border-color: #dc3545;
+  background-color: #fff5f5;
+}
+
+/* FORM SUBMIT ROW */
+.form-submit-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.form-submit-row .thm-btn {
+  position: relative;
+  padding: 14px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  background: #005574;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 160px;
+}
+
+.form-submit-row .thm-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+}
+
+.form-submit-row .thm-btn.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.btn-spinner {
+  display: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  margin-right: 8px;
+}
+
+.form-submit-row .thm-btn.loading .btn-spinner {
+  display: inline-block;
+}
+
+.form-submit-row .thm-btn.loading .btn-label {
+  opacity: 0.7;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form-note {
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* FORM SUCCESS MESSAGE */
+.form-success {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 30px;
+  background: #f0f9ff;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+  opacity: 0;
+  transform: scale(0.95);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.form-success.show {
+  display: flex;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.form-success__icon {
+  width: 60px;
+  height: 60px;
+  background: #28a745;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-success__icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: white;
+  stroke-width: 3;
+  fill: none;
+}
+
+.form-success h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.form-success p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.btn-reset {
+  padding: 10px 25px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-reset:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   CONTACT RIGHT PANEL
+   ============================================ */
+.contact-right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.6s ease 0.2s,
+    transform 0.6s ease 0.2s;
+}
+
+.contact-right-panel.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* BUSINESS HOURS BLOCK */
+.contact-hours-block {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.block-label {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #666;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.hours-row:last-child {
+  border-bottom: none;
+}
+
+.hours-day {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.hours-time {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.hours-time.closed {
+  color: #dc3545;
+}
+
+/* STATUS INDICATOR */
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background: #28a745;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.status-dot.closed-dot {
+  background: #dc3545;
+  animation: none;
+}
+
+.status-text {
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* MAP BLOCK */
+.contact-map-block {
+  position: relative;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contact-map-block iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.map-overlay-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    transparent 40%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+  pointer-events: none;
+}
+
+.map-location-card {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: white;
+  padding: 12px 15px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  max-width: calc(100% - 30px);
+}
+
+.map-location-card__dot {
+  width: 8px;
+  height: 8px;
+  background: #005574;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.map-location-card__name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+}
+
+.map-location-card__addr {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* SOCIAL BLOCK */
+.contact-social-block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contact-social-block > span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.social-link-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.social-link-btn:hover {
+  background: #005574;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.social-link-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+/* ============================================
+   SLOGAN STRIP
+   ============================================ */
+.contact-slogan-strip {
+  background: linear-gradient(135deg, #005574, #6cb945 100%);
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+}
+
+.slogan-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.slogan-inner h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.slogan-inner h3 span {
+  font-weight: 700;
+}
+
+.slogan-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background: white;
+  color: #005574;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.slogan-btn:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   FADE ANIMATIONS
+   ============================================ */
+.jel-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.jel-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.jel-fade-delay-1.visible {
+  transition-delay: 0.2s;
+}
+
+.jel-fade-delay-2.visible {
+  transition-delay: 0.4s;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 1024px) {
+  .contact-main-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-form-panel .sec-title__title {
+    font-size: 28px;
+  }
+
+  .slogan-inner h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page-section {
+    padding: 40px 0;
+  }
+
+  .contact-info-strip {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .contact-form-panel .sec-title__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .enquiry-tags {
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .enquiry-tag {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .form-row:not(.full) {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-right-panel {
+    gap: 30px;
+  }
+
+  .contact-map-block {
+    height: 250px;
+  }
+
+  .slogan-inner h3 {
+    font-size: 22px;
+  }
+
+  .slogan-inner {
+    gap: 20px;
+  }
+
+  .contact-social-block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form-submit-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-submit-row .thm-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page-section {
+    padding: 25px 0;
+  }
+
+  .contact-info-card {
+    padding: 25px 20px;
+    gap: 15px;
+  }
+
+  .contact-info-card__label {
+    font-size: 12px;
+  }
+
+  .contact-info-card__value {
+    font-size: 14px;
+  }
+
+  .contact-form-panel .sec-title__title {
+    font-size: 20px;
+  }
+
+  .contact-hours-block,
+  .contact-social-block {
+    padding: 20px;
+  }
+
+  .contact-map-block {
+    height: 200px;
+  }
+
+  .map-location-card {
+    padding: 10px 12px;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .map-location-card__name {
+    font-size: 12px;
+  }
+
+  .map-location-card__addr {
+    font-size: 11px;
+  }
+
+  .slogan-strip {
+    padding: 30px 0;
+  }
+
+  .slogan-inner h3 {
+    font-size: 18px;
+  }
+
+  .slogan-btn {
+    padding: 12px 30px;
+    font-size: 12px;
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.hidden {
+  display: none !important;
+}
+
+/* Theme button override if needed */
+.thm-btn {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}

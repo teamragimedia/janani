@@ -1,0 +1,108 @@
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style>
+      .map-bg { fill: none; stroke: rgba(69,200,255,0.15); stroke-width: 1; }
+      .map-grid { stroke: rgba(69,200,255,0.08); stroke-width: 0.5; }
+      .map-zone { fill: none; stroke: rgba(69,200,255,0.12); stroke-width: 1.5; }
+      .map-label { fill: rgba(255,255,255,0.15); font-family: 'DM Sans', sans-serif; font-size: 11px; text-anchor: middle; }
+      .map-accent { stroke: rgba(201,163,106,0.2); stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="map-bg" width="600" height="600"/>
+
+  <!-- Grid overlay -->
+  <g class="map-grid">
+    <line x1="0" y1="150" x2="600" y2="150"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="0" y1="450" x2="600" y2="450"/>
+    <line x1="150" y1="0" x2="150" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="450" y1="0" x2="450" y2="600"/>
+  </g>
+
+  <!-- Central zone -->
+  <circle class="map-zone" cx="300" cy="280" r="80" />
+  
+  <!-- East zone (Whitefield, Indiranagar) -->
+  <ellipse class="map-zone" cx="420" cy="240" rx="90" ry="110" />
+  
+  <!-- South zone -->
+  <ellipse class="map-zone" cx="300" cy="420" rx="100" ry="80" />
+  
+  <!-- North zone -->
+  <ellipse class="map-zone" cx="250" cy="120" rx="80" ry="70" />
+  
+  <!-- West zone -->
+  <ellipse class="map-zone" cx="120" cy="300" rx="70" ry="100" />
+
+  <!-- Major roads (accent lines) -->
+  <g class="map-accent">
+    <!-- North-South arterial -->
+    <path d="M 300 20 L 300 580" />
+    <!-- East-West arterial -->
+    <path d="M 20 280 L 580 280" />
+    <!-- Diagonal -->
+    <path d="M 100 100 L 500 500" />
+  </g>
+
+  <!-- Points of interest markers (subtle) -->
+  <g fill="rgba(69,200,255,0.2)" opacity="0.4">
+    <!-- Central area -->
+    <circle cx="300" cy="280" r="3"/>
+    <!-- East -->
+    <circle cx="450" cy="220" r="3"/>
+    <!-- South -->
+    <circle cx="280" cy="440" r="3"/>
+    <!-- North -->
+    <circle cx="240" cy="100" r="3"/>
+    <!-- West -->
+    <circle cx="100" cy="300" r="3"/>
+  </g>
+
+  <!-- Zone labels -->
+  <text class="map-label" x="300" y="290">CENTRAL</text>
+  <text class="map-label" x="450" y="270">EAST</text>
+  <text class="map-label" x="300" y="470">SOUTH</text>
+  <text class="map-label" x="220" y="140">NORTH</text>
+  <text class="map-label" x="100" y="320">WEST</text>
+
+  <!-- Decorative circles (zones of influence) -->
+  <circle class="map-zone" cx="300" cy="300" r="200" opacity="0.3"/>
+  <circle class="map-zone" cx="300" cy="300" r="120" opacity="0.3"/>
+
+  <!-- Corner reference marks -->
+  <g stroke="rgba(69,200,255,0.1)" stroke-width="1" opacity="0.3">
+    <line x1="10" y1="10" x2="30" y2="10"/>
+    <line x1="10" y1="10" x2="10" y2="30"/>
+    <line x1="590" y1="10" x2="570" y2="10"/>
+    <line x1="590" y1="10" x2="590" y2="30"/>
+    <line x1="10" y1="590" x2="30" y2="590"/>
+    <line x1="10" y1="590" x2="10" y2="570"/>
+    <line x1="590" y1="590" x2="570" y2="590"/>
+    <line x1="590" y1="590" x2="590" y2="570"/>
+  </g>
+
+  <!-- Center crosshair -->
+  <g stroke="rgba(69,200,255,0.1)" stroke-width="0.5" opacity="0.2">
+    <line x1="295" y1="280" x2="305" y2="280"/>
+    <line x1="300" y1="275" x2="300" y2="285"/>
+  </g>
+
+  <!-- Info text -->
+  <text 
+    class="map-label" 
+    x="300" y="30" 
+    style="font-size: 14px; fill: rgba(69,200,255,0.25); font-weight: 500;"
+  >
+    BANGALORE INFRASTRUCTURE MAP
+  </text>
+  <text 
+    class="map-label" 
+    x="300" y="580" 
+    style="font-size: 10px; fill: rgba(69,200,255,0.15);"
+  >
+    120+ projects across 35+ locations
+  </text>
+</svg>
