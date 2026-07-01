@@ -3119,8 +3119,15 @@ Brand One
 .page-header {
   position: relative;
   display: block;
-  padding: 204px 0px 211px;
-  background: var(--thm-black);
+  padding: 204px 0 211px;
+  background: linear-gradient(
+    to left,
+    #005574 0%,
+    #005574 20%,
+    #005574 40%,
+    #005574 70%,
+    #005574 80%
+  );
   overflow: hidden;
   z-index: 1;
 }
@@ -11732,3 +11739,5 @@ End Css
     transition: none;
   }
 }
+
+

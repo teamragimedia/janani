@@ -90,7 +90,6 @@
 .contact-info-card__value a {
   color: #222;
   text-decoration: none;
-  border-bottom: 2px solid #005574;
   transition: color 0.3s ease;
 }
 
