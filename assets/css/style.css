@@ -5502,7 +5502,7 @@ Counter Two
 }
 
 .counter-two__single-top .counter-box h2 {
-  color: #ffffff;
+  color: #6cb945;
   font-size: 85px;
   line-height: 1em;
   font-weight: 500;
@@ -6744,6 +6744,10 @@ Service Details Css
   z-index: 1;
 }
 
+.service-details__faq-inner h2 {
+  color: #6cb945;
+}
+
 .service-details__faq .accrodion {
   position: relative;
   display: block;
@@ -6769,7 +6773,7 @@ Service Details Css
 
 .service-details__faq .accrodion .accrodion-title h4 {
   position: relative;
-  color: #ffffff;
+  color: #6cb945;
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
@@ -6807,6 +6811,7 @@ Service Details Css
   position: relative;
   display: block;
   padding: 0px 40px 35px;
+  color: #fff;
 }
 
 .service-details__faq .accrodion .accrodion-content .inner {
@@ -9460,7 +9465,7 @@ End Css
   margin-bottom: 24px;
   background: linear-gradient(135deg, #fff, var(--secondary));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: #6cb945;
   background-clip: text;
 }
 
@@ -9471,7 +9476,7 @@ End Css
 
 .hero-subtitle {
   font-size: 18px;
-  color: var(--text-secondary);
+  color: #fff;
   margin-bottom: 40px;
   line-height: 1.6;
   max-width: 500px;
@@ -9540,13 +9545,13 @@ End Css
   font-weight: 800;
   background: linear-gradient(135deg, #fff, var(--secondary));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #ffffff;
+  -webkit-text-fill-color: #6cb945;
   background-clip: text;
 }
 
 .stat-label {
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #fff;
   margin-top: 8px;
 }
 
@@ -9735,11 +9740,12 @@ End Css
 .card-header h3 {
   font-size: 20px;
   font-weight: 700;
+  color: #6cb945;
 }
 
 .service-card-modern > p {
   font-size: 16px;
-  color: var(--text-secondary);
+  color: #ffff;
   margin-bottom: 24px;
   line-height: 1.6;
   position: relative;
@@ -9758,13 +9764,13 @@ End Css
   align-items: center;
   gap: 12px;
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #fff;
   padding: 8px 0;
   transition: color 0.3s ease;
 }
 
 .checkmark {
-  color: var(--secondary);
+  color: #6cb945;
   font-weight: 700;
 }
 
@@ -9857,11 +9863,12 @@ End Css
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 4px;
+  color: #6cb945;
 }
 
 .benefit-item p {
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #fff;
 }
 
 .why-visual {
@@ -9909,7 +9916,7 @@ End Css
 
 .stat-desc {
   font-size: 12px;
-  color: var(--text-secondary);
+  color: #fff;
   margin-top: 8px;
 }
 
@@ -10050,6 +10057,7 @@ End Css
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.15;
+  color: #6cb945;
 }
 .qs2-intro-left p {
   font-size: 16px;
@@ -10225,9 +10233,10 @@ End Css
   font-size: 22px;
   color: #fff;
   flex: 0 0 54px;
+  background-color: #005574;
 }
 .qs2-panel-quality .qs2-panel-icon {
-  background: var(--thm-gray);
+  background: #005574;
 }
 .qs2-panel-safety .qs2-panel-icon {
   background: var(--thm-black);
@@ -10240,7 +10249,7 @@ End Css
   margin: 0;
 }
 .qs2-panel > p {
-  color: var(--qs-muted);
+  color: #005574;
   font-size: 15px;
   line-height: 1.8;
   margin-bottom: 26px;
@@ -10257,7 +10266,7 @@ End Css
   gap: 12px;
   font-size: 14.5px;
   padding: 10px 0;
-  color: var(--qs-ink);
+  color: #6cb945;
 }
 .qs2-checklist li i {
   font-size: 13px;
@@ -10265,7 +10274,7 @@ End Css
   flex: 0 0 16px;
 }
 .qs2-panel-quality .qs2-checklist li i {
-  color: var(--thm-gray);
+  color: #005574;
 }
 .qs2-panel-safety .qs2-checklist li i {
   color: var(--thm-black);
