@@ -1,105 +1,119 @@
 <!doctype html>
+
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Portfolio</title>
     <!-- Favicons Icons -->
     <link
+      href="assets/images/favicons/apple-touch-icon.png"
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/images/favicons/apple-touch-icon.png"
     />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
       href="assets/images/favicons/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
     />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
       href="assets/images/favicons/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
     />
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-    <meta name="description" content="Baosh HTML 5 Template " />
-
+    <link href="assets/images/favicons/site.webmanifest" rel="manifest" />
+    <meta content="Baosh HTML 5 Template " name="description" />
     <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
-    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
+    <link href="assets/vendors/animate/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendors/animate/custom-animate.css" rel="stylesheet" />
     <link
-      rel="stylesheet"
       href="assets/vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
     />
     <link
-      rel="stylesheet"
       href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css"
-    />
-    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
-    <link
       rel="stylesheet"
+    />
+    <link href="assets/vendors/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link
       href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css"
-    />
-    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
-    <link rel="stylesheet" href="assets/vendors/nice-select/nice-select.css" />
-    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
-    <link
       rel="stylesheet"
+    />
+    <link href="assets/vendors/jquery-ui/jquery-ui.css" rel="stylesheet" />
+    <link href="assets/vendors/nice-select/nice-select.css" rel="stylesheet" />
+    <link href="assets/vendors/odometer/odometer.min.css" rel="stylesheet" />
+    <link
       href="assets/vendors/owl-carousel/owl.carousel.min.css"
+      rel="stylesheet"
     />
     <link
-      rel="stylesheet"
       href="assets/vendors/owl-carousel/owl.theme.default.min.css"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
-    <link rel="stylesheet" href="assets/vendors/thm-icons/style.css" />
-    <link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css" />
+    <link href="assets/vendors/swiper/swiper.min.css" rel="stylesheet" />
+    <link href="assets/vendors/thm-icons/style.css" rel="stylesheet" />
+    <link href="assets/vendors/reey-font/stylesheet.css" rel="stylesheet" />
     <!-- template styles -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <!-- fixed marquee / MDB projects styles (renamed classes to avoid
+         Bootstrap .card / .modal / .overlay collisions) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              base: "#005574",
+              accent: "#6cb945",
+            },
+            fontFamily: {
+              serif: ["DM Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
-
   <body>
     <!-- Start Preloader -->
     <div class="loader-wrap">
       <div class="preloader">
         <div class="preloader-close">x</div>
-        <div id="handle-preloader" class="handle-preloader">
+        <div class="handle-preloader" id="handle-preloader">
           <div class="animation-preloader">
-            <img src="assets/images/resources/janani.gif" alt="" />
             <div class="txt-loading">
-              <span data-text-preloader="J" class="letters-loading"> J </span>
-              <span data-text-preloader="A" class="letters-loading"> A </span>
-              <span data-text-preloader="N" class="letters-loading"> N </span>
-              <span data-text-preloader="A" class="letters-loading"> A </span>
-              <span data-text-preloader="N" class="letters-loading"> N </span>
-              <span data-text-preloader="I" class="letters-loading"> I </span>
+              <span class="letters-loading" data-text-preloader="J"> J </span>
+              <span class="letters-loading" data-text-preloader="A"> A </span>
+              <span class="letters-loading" data-text-preloader="N"> N </span>
+              <span class="letters-loading" data-text-preloader="A"> A </span>
+              <span class="letters-loading" data-text-preloader="N"> N </span>
+              <span class="letters-loading" data-text-preloader="I"> I </span>
             </div>
             <div class="txt-loading">
-              <span data-text-preloader="E" class="letters-loading"> E </span>
-              <span data-text-preloader="L" class="letters-loading"> L </span>
-              <span data-text-preloader="E" class="letters-loading"> E </span>
-              <span data-text-preloader="C" class="letters-loading"> C </span>
-              <span data-text-preloader="T" class="letters-loading"> T </span>
-              <span data-text-preloader="R" class="letters-loading"> R </span>
-              <span data-text-preloader="I" class="letters-loading"> I </span>
-              <span data-text-preloader="C" class="letters-loading"> C </span>
-              <span data-text-preloader="A" class="letters-loading"> A </span>
-              <span data-text-preloader="L" class="letters-loading"> L </span>
-              <span data-text-preloader="S" class="letters-loading"> S </span>
+              <span class="letters-loading" data-text-preloader="E"> E </span>
+              <span class="letters-loading" data-text-preloader="L"> L </span>
+              <span class="letters-loading" data-text-preloader="E"> E </span>
+              <span class="letters-loading" data-text-preloader="C"> C </span>
+              <span class="letters-loading" data-text-preloader="T"> T </span>
+              <span class="letters-loading" data-text-preloader="R"> R </span>
+              <span class="letters-loading" data-text-preloader="I"> I </span>
+              <span class="letters-loading" data-text-preloader="C"> C </span>
+              <span class="letters-loading" data-text-preloader="A"> A </span>
+              <span class="letters-loading" data-text-preloader="L"> L </span>
+              <span class="letters-loading" data-text-preloader="S"> S </span>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- End Preloader -->
-
     <div class="page-wrapper">
       <!-- Start sidebar widget content -->
       <div class="xs-sidebar-group info-group info-sidebar">
@@ -107,14 +121,14 @@
         <div class="xs-sidebar-widget">
           <div class="sidebar-widget-container">
             <div class="widget-heading">
-              <a href="#" class="close-side-widget">X</a>
+              <a class="close-side-widget" href="#">X</a>
             </div>
             <div class="sidebar-textwidget">
               <div class="sidebar-info-contents">
                 <div class="content-inner">
                   <div class="logo">
                     <a href="index.html"
-                      ><img src="assets/images/resources/LOGO.svg" alt=""
+                      ><img alt="" src="assets/images/resources/LOGO.svg"
                     /></a>
                   </div>
                   <div class="content-box">
@@ -130,24 +144,23 @@
                       </p>
                     </div>
                   </div>
-
                   <div class="form-inner">
                     <h4>Get a free quote</h4>
                     <form action="index.html" method="post">
                       <div class="form-group">
                         <input
-                          type="text"
                           name="name"
                           placeholder="Name"
                           required=""
+                          type="text"
                         />
                       </div>
                       <div class="form-group">
                         <input
-                          type="email"
                           name="email"
                           placeholder="Email"
                           required=""
+                          type="email"
                         />
                       </div>
                       <div class="form-group">
@@ -159,8 +172,8 @@
                       <div class="form-group message-btn">
                         <button
                           class="thm-btn"
-                          type="submit"
                           data-loading-text="Please wait..."
+                          type="submit"
                         >
                           <span class="txt">Submit Now</span>
                           <span class="bdrl"></span>
@@ -169,7 +182,6 @@
                       </div>
                     </form>
                   </div>
-
                   <div class="sidebar-contact-info">
                     <h4>Contact Info</h4>
                     <ul>
@@ -202,7 +214,7 @@
                     <ul class="social-box">
                       <li class="facebook">
                         <a href="#"
-                          ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+                          ><i aria-hidden="true" class="fab fa-linkedin-in"></i
                         ></a>
                       </li>
                     </ul>
@@ -214,7 +226,6 @@
         </div>
       </div>
       <!-- End sidebar widget content -->
-
       <!--Start Main Header Two-->
       <header class="main-header main-header-two style3">
         <div class="main-header-two__inner">
@@ -226,19 +237,17 @@
                     <div class="logo-box-one">
                       <a href="index.html">
                         <img
-                          src="assets/images/resources/LOGO.svg"
                           alt="Awesome Logo"
+                          src="assets/images/resources/LOGO.svg"
                           title=""
                         />
                       </a>
                     </div>
                   </div>
-
                   <div class="main-menu-box">
-                    <a href="#" class="mobile-nav__toggler">
+                    <a class="mobile-nav__toggler" href="#">
                       <i class="fa fa-bars"></i>
                     </a>
-
                     <ul class="main-menu__list">
                       <li>
                         <a href="index.html">Home</a>
@@ -246,7 +255,6 @@
                       <li>
                         <a href="about.html">About</a>
                       </li>
-
                       <li>
                         <a href="services.html">Services</a>
                       </li>
@@ -256,26 +264,22 @@
                       <li>
                         <a href="gallery.html">Gallery</a>
                       </li>
-
                       <li>
-                        <a href="quality.html">Quality & Safety</a>
+                        <a href="quality.html">Quality &amp; Safety</a>
                       </li>
-
                       <li>
                         <a href="contact.html">Contact</a>
                       </li>
                     </ul>
                   </div>
-
                   <div class="main-header-two__right">
                     <div class="header-search-box">
                       <a
-                        href="#"
                         class="main-menu__search search-toggler icon-search-interface-symbol"
+                        href="#"
                       >
                       </a>
                     </div>
-
                     <div class="side-content-button-box">
                       <div class="side-content-button">
                         <a class="navSidebar-button" href="#">
@@ -291,13 +295,11 @@
         </div>
       </header>
       <!--End Main Header Two-->
-
       <div class="stricky-header stricky-header--one stricked-menu main-menu">
         <div class="sticky-header__content"></div>
         <!-- /.sticky-header__content -->
       </div>
       <!-- /.stricky-header -->
-
       <!--Start Page Header-->
       <section class="page-header">
         <div
@@ -327,6 +329,127 @@
       </section>
       <!--End Page Header-->
 
+      <!--listings-->
+      <!-- faint grid -->
+      <!-- <div
+        class="fixed inset-0 pointer-events-none bg-[linear-gradient(#6cb945_1px,transparent_1px),linear-gradient(90deg,#6cb945_1px,transparent_1px)] bg-[size:64px_64px] opacity-[0.05]"
+      ></div> -->
+
+      <!-- rotated edge label -->
+      <div
+        class="hidden lg:block fixed top-1/2 right-6 -translate-y-1/2 [writing-mode:vertical-rl] text-[10px] tracking-[0.35em] font-mono uppercase text-white/40"
+      >
+        Est. Bengaluru · Register No. 026
+      </div>
+
+      <main
+        class="relative  max-w-5xl mx-auto px-6 md:px-10 pt-20 pb-32"
+      >
+        <!-- header -->
+        <header class="mb-16 md:mb-24">
+          <div
+            class="flex items-baseline justify-between border-b border-white/15 pb-6 mb-6"
+          >
+            <span
+              class="font-mono text-[11px] tracking-[0.3em] uppercase text-white/50"
+              >Portfolio — Karnataka</span
+            >
+            <span
+              id="clock"
+              class="font-mono text-[11px] tracking-[0.3em] uppercase text-white/50"
+            ></span>
+          </div>
+
+          <h1
+            class="font-serif text-[13vw] sm:text-6xl md:text-7xl leading-[0.95] tracking-tight text-accent"
+          >
+            Register<br class="hidden sm:block" />
+            of <em class="font-normal text-white">Works</em>
+          </h1>
+
+          <div
+            class="mt-8 flex flex-col sm:flex-row sm:items-end justify-between gap-6"
+          >
+            <p
+              class="max-w-md text-sm md:text-base text-white/60 leading-relaxed"
+            >
+              Every residence and commercial address we have carried from
+              drawing to delivery, held here as a standing record.
+            </p>
+            <div class="flex gap-8 font-mono text-xs">
+              <div>
+                <div class="text-white/40 uppercase tracking-widest mb-1">
+                  Total
+                </div>
+                <div id="countTotal" class="text-2xl font-normal text-accent">
+                  00
+                </div>
+              </div>
+              <div>
+                <div class="text-white/40 uppercase tracking-widest mb-1">
+                  Residential
+                </div>
+                <div
+                  id="countResidential"
+                  class="text-2xl font-normal text-white"
+                >
+                  00
+                </div>
+              </div>
+              <div>
+                <div class="text-white/40 uppercase tracking-widest mb-1">
+                  Commercial
+                </div>
+                <div
+                  id="countCommercial"
+                  class="text-2xl font-normal text-white"
+                >
+                  00
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- filter tabs -->
+        <nav
+          class="flex items-center gap-8 border-b border-white/15 mb-2 font-mono text-xs uppercase tracking-widest"
+        >
+          <button
+            data-filter="all"
+            class="tab-btn relative py-4 text-accent transition-colors"
+          >
+            All <span id="tabCountAll" class="text-white/40">(00)</span>
+            <span
+              class="tab-underline absolute left-0 -bottom-px h-[2px] bg-accent w-full"
+            ></span>
+          </button>
+          <button
+            data-filter="residential"
+            class="tab-btn relative py-4 text-white/40 hover:text-white transition-colors"
+          >
+            Residential
+            <span id="tabCountResidential" class="text-white/30">(00)</span>
+            <span
+              class="tab-underline absolute left-0 -bottom-px h-[2px] bg-accent w-0"
+            ></span>
+          </button>
+          <button
+            data-filter="commercial"
+            class="tab-btn relative py-4 text-white/40 hover:text-white transition-colors"
+          >
+            Commercial
+            <span id="tabCountCommercial" class="text-white/30">(00)</span>
+            <span
+              class="tab-underline absolute left-0 -bottom-px h-[2px] bg-accent w-0"
+            ></span>
+          </button>
+        </nav>
+
+        <!-- list -->
+        <div id="list" class="divide-y divide-white/15"></div>
+      </main>
+      <!---Listings-->
       <!--Start Gallery Two -->
       <section class="gallery-two gallery-two--portfolio">
         <div class="container">
@@ -341,7 +464,6 @@
               Our Working Gallery
             </h2>
           </div>
-
           <div class="row">
             <!--Start Gallery Two Single-->
             <div
@@ -351,9 +473,276 @@
               <div class="gallery-two__single">
                 <div class="gallery-two__single-img">
                   <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/01.png" />
+                    <div class="overlay-content">
+                      <p>Residential</p>
+                      <!-- <span>Executed</span> -->
+                      <h2><a href="#">ASSETZ MARQ PHASE 3</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/02.png" />
+                    <div class="overlay-content">
+                      <p>Residential</p>
+                      <!-- <span>Executed</span> -->
+                      <h2><a href="#">GODREJ ANANDA PHASE 2</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/03.png" />
+                    <div class="overlay-content">
+                      <p>Residential</p>
+                      <!-- <span>Executed</span> -->
+                      <h2><a href="#">century artizan club house</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/04.png" />
+                    <div class="overlay-content">
+                      <p>Residential</p>
+                      <!-- <span>Executed</span> -->
+                      <h2><a href="#">Assetz Zen and Sato</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/05.png" />
+                    <div class="overlay-content">
+                      <p>Residential</p>
+                      <!-- <span>Executed</span> -->
+                      <h2><a href="#">ADARSH WELKIN PARK</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/06.png" />
+                    <div class="overlay-content">
+                      <p>Residential</p>
+                      <!-- <span>Executed</span> -->
+                      <h2><a href="#">Assetz Ren and Rei</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/07.png" />
+                    <div class="overlay-content">
+                      <p>Residential</p>
+                      <!-- <span>Executed</span> -->
+                      <h2><a href="#">LEGACY DIMORA</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/08.png" />
+                    <div class="overlay-content">
+                      <p>Residential</p>
+                      <!-- <span>Executed</span> -->
+                      <h2><a href="#">Assetz Sora and Saki</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/09.png" />
+                    <div class="overlay-content">
+                      <p>Residential</p>
+                      <!-- <span>Executed</span> -->
+                      <h2><a href="#">ASSETZ CANVAS AND COVE</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/10.png" />
+                    <div class="overlay-content">
+                      <p>Commercial</p>
+
+                      <h2><a href="#">century downtown</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/11.png" />
+                    <div class="overlay-content">
+                      <p>Residential</p>
+                      <!-- <span>Executed</span> -->
+                      <h2><a href="#">assetz bloom and dell</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/12.png" />
+                    <div class="overlay-content">
+                      <p>Residential</p>
+                      <!-- <span>Executed</span> -->
+                      <h2><a href="#">CENTURY ETHOS</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/13.png" />
+                    <div class="overlay-content">
+                      <p>Residential</p>
+                      <!-- <span>Executed</span> -->
+                      <h2><a href="#">CENTURY LIVA</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
+                    <img alt="#" src="assets/images/gallery/projects/14.png" />
+                    <div class="overlay-content">
+                      <p>Residential</p>
+                      <!-- <span>Executed</span> -->
+                      <h2><a href="#">CENTURY HORIZON</a></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Gallery Two Single-->
+
+            <!--Start Gallery Two Single-->
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-two__single">
+                <div class="gallery-two__single-img">
+                  <div class="inner">
                     <img
-                      src="assets/images/gallery1/P-Legacy Estilo.png"
                       alt="#"
+                      src="assets/images/gallery1/P-Legacy Estilo.png"
                     />
                     <div class="overlay-content">
                       <p>Residential</p>
@@ -365,7 +754,6 @@
               </div>
             </div>
             <!--End Gallery Two Single-->
-
             <!--Start Gallery Two Single-->
             <div
               class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
@@ -375,8 +763,8 @@
                 <div class="gallery-two__single-img">
                   <div class="inner">
                     <img
-                      src="assets/images/gallery1/P-Legacy Dimora.png"
                       alt="#"
+                      src="assets/images/gallery1/P-Legacy Dimora.png"
                     />
                     <div class="overlay-content">
                       <p>Residential</p>
@@ -388,7 +776,6 @@
               </div>
             </div>
             <!--End Gallery Two Single-->
-
             <!--Start Gallery Two Single-->
             <div
               class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
@@ -398,8 +785,8 @@
                 <div class="gallery-two__single-img">
                   <div class="inner">
                     <img
-                      src="assets/images/gallery1/P-Assetz Marq.png"
                       alt="#"
+                      src="assets/images/gallery1/P-Assetz Marq.png"
                     />
                     <div class="overlay-content">
                       <p>Residential</p>
@@ -411,7 +798,6 @@
               </div>
             </div>
             <!--End Gallery Two Single-->
-
             <!--Start Gallery Two Single-->
             <div
               class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
@@ -421,8 +807,8 @@
                 <div class="gallery-two__single-img">
                   <div class="inner">
                     <img
-                      src="assets/images/gallery1/P-Century Linea.png"
                       alt="#"
+                      src="assets/images/gallery1/P-Century Linea.png"
                     />
                     <div class="overlay-content">
                       <p>Residential</p>
@@ -434,7 +820,6 @@
               </div>
             </div>
             <!--End Gallery Two Single-->
-
             <!--Start Gallery Two Single-->
             <div
               class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
@@ -444,8 +829,8 @@
                 <div class="gallery-two__single-img">
                   <div class="inner">
                     <img
-                      src="assets/images/gallery1/P-Century Breeze.png"
                       alt="#"
+                      src="assets/images/gallery1/P-Century Breeze.png"
                     />
                     <div class="overlay-content">
                       <p>Residential</p>
@@ -457,7 +842,6 @@
               </div>
             </div>
             <!--End Gallery Two Single-->
-
             <!--Start Gallery Two Single-->
             <div
               class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
@@ -467,8 +851,8 @@
                 <div class="gallery-two__single-img">
                   <div class="inner">
                     <img
-                      src="assets/images/gallery1/P-Century Eden.png"
                       alt="#"
+                      src="assets/images/gallery1/P-Century Eden.png"
                     />
                     <div class="overlay-content">
                       <p>Residential</p>
@@ -489,8 +873,8 @@
                 <div class="gallery-two__single-img">
                   <div class="inner">
                     <img
-                      src="assets/images/gallery1/P-Century Wintersun.png"
                       alt="#"
+                      src="assets/images/gallery1/P-Century Wintersun.png"
                     />
                     <div class="overlay-content">
                       <p>Residential</p>
@@ -511,57 +895,13 @@
                 <div class="gallery-two__single-img">
                   <div class="inner">
                     <img
-                      src="assets/images/gallery1/P-Legacy Cirocco.png"
                       alt="#"
+                      src="assets/images/gallery1/P-Legacy Cirocco.png"
                     />
                     <div class="overlay-content">
                       <p>Residential</p>
                       <span>Executed</span>
                       <h2><a href="#">Legacy Cirrocco</a></h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--End Gallery Two Single-->
-            <!--Start Gallery Two Single-->
-            <div
-              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div class="gallery-two__single">
-                <div class="gallery-two__single-img">
-                  <div class="inner">
-                    <img
-                      src="assets/images/gallery1/P-Legacy Eldora.png"
-                      alt="#"
-                    />
-                    <div class="overlay-content">
-                      <p>Residential</p>
-                      <span>Executed</span>
-                      <h2><a href="#">Legacy Eldora</a></h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--End Gallery Two Single-->
-            <!--Start Gallery Two Single-->
-            <div
-              class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div class="gallery-two__single">
-                <div class="gallery-two__single-img">
-                  <div class="inner">
-                    <img
-                      src="assets/images/gallery1/P-Century Horizon.png"
-                      alt="#"
-                    />
-                    <div class="overlay-content">
-                      <p>Residential</p>
-                      <span>Executed</span>
-                      <h2><a href="#">Century Horizon</a></h2>
                     </div>
                   </div>
                 </div>
@@ -578,8 +918,8 @@
                 <div class="gallery-two__single-img">
                   <div class="inner">
                     <img
-                      src="assets/images/gallery1/P-Godrej Ananda.png"
                       alt="#"
+                      src="assets/images/gallery1/P-Godrej Ananda.png"
                     />
                     <div class="overlay-content">
                       <p>Residential</p>
@@ -599,10 +939,7 @@
               <div class="gallery-two__single">
                 <div class="gallery-two__single-img">
                   <div class="inner">
-                    <img
-                      src="assets/images/gallery1/legacy_soreno-devinagar-bengaluru-legacy_global_projects_pvt_ltd.avif"
-                      alt="#"
-                    />
+                    <img alt="#" src="assets/images/gallery1/Legacy.png" />
                     <div class="overlay-content">
                       <p>Residential</p>
                       <span>Executed</span>
@@ -616,85 +953,59 @@
           </div>
         </div>
       </section>
-      <!--End Gallery Two -->
+      <!--Project ends here-->
 
-      <section class="pm-section" id="pmSection">
-        <div class="pm-grid"></div>
-        <div class="pm-spotlight" id="pmSpotlight"></div>
-        <div class="pm-particles" id="pmParticles"></div>
+      <!--Featured Projects-->
+      <section class="gallery-two gallery-two--portfolio">
+        <main>
+          <div class="page-title">
+            <h1>Our Projects</h1>
+            <p>Browse a few of the projects we've delivered.</p>
+          </div>
 
-        <div class="pm-head">
-          <span class="pm-tag">Executed Works</span>
-          <h2 class="ps-head">Power Behind the Skyline</h2>
-          <p>
-            A continuous stream of electrical infrastructure projects executed
-            across residential, commercial, and industrial landscapes —
-            engineered with precision, delivered with trust.
-          </p>
-        </div>
+          <div class="marquee-viewport" id="viewport">
+            <div class="marquee-track" id="track"></div>
+          </div>
+          <p class="hint">Hover to pause</p>
+        </main>
 
-        <div class="pm-toolbar">
-          <div class="pm-tabs">
-            <button class="pm-tab active" data-filter="all">All</button>
-
-            <button class="pm-tab" data-filter="residential">
-              Residential
+        <div class="overlay" id="overlay">
+          <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose" aria-label="Close">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 6L6 18M6 6l12 12" />
+              </svg>
             </button>
-
-            <button class="pm-tab" data-filter="commercial">Commercial</button>
-          </div>
-
-          <div class="pm-legend">
-            <span class="legend completed"> <i></i> Completed </span>
-
-            <span class="legend ongoing"> <i></i> Ongoing </span>
-          </div>
-        </div>
-
-        <div class="pm-marquee-wrap">
-          <!-- Row 1 — left to right (reverse), slow -->
-          <div class="pm-row reverse" data-speed="slow">
-            <div class="pm-track" id="pmTrack1">
-              <!-- set populated via JS duplication -->
+            <div class="card-label">Project:</div>
+            <div class="modal-name" id="modalName"></div>
+            <div class="modal-grid">
+              <div class="modal-field">
+                <div class="card-label">Location:</div>
+                <div class="card-value" id="modalLocation"></div>
+              </div>
+              <div class="modal-field">
+                <div class="card-label">Status:</div>
+                <div class="card-value" id="modalStatus"></div>
+              </div>
             </div>
-          </div>
-
-          <!-- Row 2 — right to left, normal -->
-          <div class="pm-row" data-speed="normal">
-            <div class="pm-track" id="pmTrack2"></div>
-          </div>
-
-          <!-- Row 3 — left to right (reverse), fast -->
-          <div class="pm-row reverse" data-speed="normal">
-            <div class="pm-track" id="pmTrack3"></div>
+            <div class="modal-field" style="margin-bottom: 22px">
+              <div class="card-label">Category:</div>
+              <div class="card-value" id="modalProject"></div>
+            </div>
+            <p class="modal-desc" id="modalDesc"></p>
           </div>
         </div>
       </section>
-      <!--End Projects Marquee -->
-
-      <!-- Modal -->
-      <div class="pm-overlay" id="pmOverlay"></div>
-      <div class="pm-modal" id="pmModal">
-        <div class="pm-modal-close" id="pmModalClose">
-          <i class="fa fa-times"></i>
-        </div>
-        <div class="pm-modal-tag">Project File</div>
-        <h3 id="pmModalName">—</h3>
-        <div class="pm-modal-row">
-          <span>Location</span>
-          <span id="pmModalLoc">—</span>
-        </div>
-        <div class="pm-modal-row">
-          <span>Status</span>
-          <span class="pm-modal-status" id="pmModalStatus">Executed</span>
-        </div>
-      </div>
-
-      <!-- Custom cursor -->
-      <div class="pm-cursor" id="pmCursor"></div>
-      <div class="pm-cursor-ring" id="pmCursorRing"></div>
-
-      <!--Start Footer One -->
+      <!--End Featured Projects-->
       <footer class="footer">
         <div class="footer-grid"></div>
         <div class="footer-glow"></div>
@@ -702,130 +1013,98 @@
           <div class="footer-top">
             <div class="footer-brand">
               <img
-                src="assets/images/resources/LOGO.svg"
                 alt="Janani Electricals"
+                src="assets/images/resources/LOGO.svg"
               />
-
               <h2>Powering Tomorrow's Infrastructure</h2>
-
               <p>
                 Janani Electricals Pvt. Ltd. has been delivering trusted
                 electrical infrastructure solutions for more than 35 years with
                 quality, innovation and commitment.
               </p>
             </div>
-
             <div class="footer-contact">
               <div class="contact-card">
                 <div class="icon">
                   <i class="fas fa-phone-alt"></i>
                 </div>
-
                 <div>
                   <span>Call Us</span>
-
-                  <h5>080-42135110 &nbsp;|&nbsp; 080-40991055</h5>
+                  <h5>080-42135110  |  080-40991055</h5>
                 </div>
               </div>
-
               <div class="contact-card">
                 <div class="icon">
                   <i class="fas fa-envelope"></i>
                 </div>
-
                 <div>
                   <span>Email</span>
-
                   <h5>jananielectricalspvtltd@gmail.com</h5>
                 </div>
               </div>
-
               <div class="contact-card">
                 <div class="icon">
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
-
                 <div>
                   <span>Office</span>
-
                   <h5>Bangalore, Karnataka</h5>
                 </div>
               </div>
             </div>
           </div>
-
           <div class="footer-middle">
             <div class="footer-column">
               <h4>Company</h4>
-
               <ul>
                 <li><a href="#">About Us</a></li>
-
                 <li><a href="#">Projects</a></li>
-
                 <li><a href="#">Services</a></li>
-
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
-
             <div class="footer-column">
               <h4>Services</h4>
-
               <ul>
                 <li><a href="#">Electrical Contracting</a></li>
-
                 <li><a href="#">HT / LT Works</a></li>
-
                 <li><a href="#">Industrial Projects</a></li>
               </ul>
             </div>
-
             <div class="footer-column">
               <h4>Quick Links</h4>
-
               <ul>
                 <li><a href="#">Clients</a></li>
-
                 <li><a href="#">Gallery</a></li>
-
                 <li><a href="#">Careers</a></li>
-
                 <li><a href="#">Privacy Policy</a></li>
               </ul>
             </div>
-
             <div class="footer-column">
               <h4>Follow Us</h4>
-
               <div class="social-links">
                 <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
 
                 <a href="#"><i class="fab fa-instagram"></i></a> -->
-
                 <a href="https://www.linkedin.com/company/janani-electricals/"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
-
                 <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
               </div>
             </div>
           </div>
-
           <div class="footer-bottom">
             <p>
               © 2026 Janani Electricals Pvt. Ltd. All Rights Reserved. Designed
               By <a href="www.ragimedia.com" style="color: red">Ragi Media</a>
             </p>
-
-            <a href="#" class="back-top"> Back To Top ↑ </a>
+            <a class="back-top" href="#"> Back To Top ↑ </a>
           </div>
         </div>
       </footer>
       <!--End Footer One-->
     </div>
     <!-- /.page-wrapper -->
-
     <div class="mobile-nav__wrapper">
       <div class="mobile-nav__overlay mobile-nav__toggler"></div>
       <div class="mobile-nav__content">
@@ -833,8 +1112,8 @@
           <i class="icon-plus"></i>
         </span>
         <div class="logo-box">
-          <a href="index.html" aria-label="logo image">
-            <img src="assets/images/resources/LOGO.svg" alt="" />
+          <a aria-label="logo image" href="index.html">
+            <img alt="" src="assets/images/resources/LOGO.svg" />
           </a>
         </div>
         <div class="mobile-nav__container"></div>
@@ -851,24 +1130,22 @@
           </li>
         </ul>
         <div class="mobile-nav__social">
-          <a href="#" class="fab fa-linkedin-in"></a>
+          <a class="fab fa-linkedin-in" href="#"></a>
         </div>
       </div>
     </div>
-
     <div class="search-popup">
       <div class="search-popup__overlay search-toggler"></div>
       <div class="search-popup__content">
         <form action="#">
-          <label for="search" class="sr-only">search here</label>
-          <input type="text" id="search" placeholder="Search Here..." />
-          <button type="submit" aria-label="search submit" class="thm-btn">
+          <label class="sr-only" for="search">search here</label>
+          <input id="search" placeholder="Search Here..." type="text" />
+          <button aria-label="search submit" class="thm-btn" type="submit">
             <i class="icon-search-interface-symbol"></i>
           </button>
         </form>
       </div>
     </div>
-
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
@@ -889,768 +1166,359 @@
     <script src="assets/vendors/gsap/gsap.js"></script>
     <script src="assets/vendors/gsap/ScrollTrigger.js"></script>
     <script src="assets/vendors/gsap/SplitText.js"></script>
-
     <!-- Template js -->
     <script src="assets/js/custom.js"></script>
-
     <script>
-      (function () {
-        /* ---------------- DATA ---------------- */
-        var pmProjects = [
-          {
-            name: "Bloom & Dell",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Canvas & Cove",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Sorasaki",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Marq",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Hoskote",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Zen & Sato ",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Kalkere",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Century Liva",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Century Midtwon",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Century Downtown",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
+      (() => {
+        const arrowIcon =
+          '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>';
+        const projects = [
+          ["Legacy Celino", "Residential"],
+          ["Legacy Adonia", "Residential"],
+          ["Legacy Soreno", "Residential"],
+          ["Legacy Caldera", "Residential"],
+          ["Legacy Madelia", "Residential"],
+          ["Legacy Terrano", "Residential"],
+          ["Legacy Tierra", "Residential"],
+          ["Legacy Aura", "Residential"],
+          ["Legacy Ariston", "Residential"],
+          ["Legacy Casero", "Residential"],
+          ["Esterralla Terraces", "Residential"],
+          ["Century Corbel Residential", "Residential"],
+          ["Century Marvel", "Residential"],
+          ["Century Renata", "Residential"],
+          ["Century Indus Phase 1 & 2", "Residential"],
+          ["Century Artizan", "Residential"],
+          ["Century Vigneshwara Estates", "Residential"],
+          ["Pai Residence", "Residential"],
+          ["Century Paradise", "Residential"],
+          ["Century Pragathi", "Residential"],
+          ["Century Celeste", "Residential"],
+          ["Century Saras", "Residential"],
+          ["Century Chitrakut", "Residential"],
+          ["Century Chimes", "Residential"],
+          ["SNS Palace", "Residential"],
+          ["SNS Arcade", "Residential"],
+          ["SNS Orchid", "Residential"],
+          ["SNS Lavelle", "Residential"],
+          ["Century Sports Village", "Residential"],
+          ["Century Central", "Residential"],
+          ["Legacy Salvador", "Residential"],
+          ["Legacy Vivienda", "Residential"],
+          ["Assetz Marq 3.1", "Residential"],
+          ["Assetz Marq 3.2", "Residential"],
+          ["Assetz Here & Now", "Residential"],
+          ["Assetz Soul & Soil", "Residential"],
+          ["Assetz 63 Degree East", "Residential"],
+          ["Assetz Bloom and Dell", "Residential"],
+          ["Assetz Canvas and Cove", "Residential"],
+          ["Century Seasons", "Residential"],
+          ["Assetz Atoms & Aura", "Residential"],
+          ["Assetz Sora Saki", "Residential"],
+          ["Century Midtown", "Residential"],
+          ["Assetz Promise of Springs", "Residential"],
+          ["Century Liva", "Residential"],
+          ["SNS Plaza", "Commercial"],
+          ["SNS Chambers", "Commercial"],
+          ["Century Nestar 1", "Commercial"],
+          ["Century Nestar 2", "Commercial"],
+          ["Century Meritz 1", "Commercial"],
+          ["Century Meritz 2", "Commercial"],
+          ["Victoria Hospital", "Commercial"],
+          ["Mantralayam", "Commercial"],
+          ["Arrow Thread India Pvt. Ltd.", "Commercial"],
+          ["Niloufer Children's Hospital", "Commercial"],
+          ["Shankar Eye Hospital", "Commercial"],
+          ["Legacy House", "Commercial"],
+          ["Legacy International School", "Commercial"],
+          ["Infosys Foundation", "Commercial"],
+          ["Vidyashilpa Academy", "Commercial"],
+          ["Century Corbel Commercial", "Commercial"],
+          ["Century Quadra", "Commercial"],
+          ["Century Austral", "Commercial"],
+          ["Assetz Downtown", "Commercial"],
+          ["Century Artizan Club House", "Commercial"],
+        ].map(([name, project]) => ({
+          name,
+          location: name,
+          status: "Executed",
+          project,
+        }));
+        const track = document.getElementById("track");
+        const viewport = document.getElementById("viewport");
+        const overlay = document.getElementById("overlay");
+        const modalName = document.getElementById("modalName");
+        const modalLocation = document.getElementById("modalLocation");
+        const modalStatus = document.getElementById("modalStatus");
+        const modalProject = document.getElementById("modalProject");
+        const modalDesc = document.getElementById("modalDesc");
+        let activeCard = null;
 
-          {
-            name: "Artizen Club House",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Adarsh Welkin Park",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Ren & Rei",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Godrej Ananda ph2",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
+        const cardHTML = (item, index) => `
+          <div class="card" data-index="${index}">
+            <div class="card-compact"><div class="card-top"><button class="card-arrow" data-open="${index}" aria-label="View details">${arrowIcon}</button><div class="card-label">Location:</div><div class="card-name">${item.name}</div></div><div class="card-bottom"><div><div class="card-label">Status:</div><div class="card-value">${item.status}</div></div><div><div class="card-label">Project:</div><div class="card-value">${item.project}</div></div></div></div>
+            <div class="card-expanded"><button class="card-arrow" data-open="${index}" aria-label="View details">${arrowIcon}</button><div><div class="card-label">Location:</div><div class="card-name">${item.name}</div></div><div class="expanded-details"><div><div class="card-label">Status:</div><div class="card-value">${item.status}</div></div><div><div class="card-label">Project:</div><div class="card-value">${item.project}</div></div></div></div>
+          </div>`;
+        const createGroup = () =>
+          `<div class="marquee-group">${projects.map(cardHTML).join("")}</div>`;
+        track.innerHTML = createGroup() + createGroup();
 
-          {
-            name: "Legacy Celino",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Legacy Adonia",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Legacy Soreno",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Legacy Caldera",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Legacy Madelia",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Legacy Terrano",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Legacy Tierra",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Legacy Aura",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Legacy Ariston",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Legacy Casero",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Esterralla Terraces",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Corbel Residential",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Marvel",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Renata",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Indus Phase 1 & 2",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Artizan",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Vigneshwara Estates",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Pai Residence",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Paradise",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Pragathi",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Celeste",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Saras",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Chitrakut",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Chimes",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "SNS Palace",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "SNS Arcade",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "SNS Orchid",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "SNS Lavelle",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Sports Village",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Century Central",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Legacy Salvador",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Legacy Vivienda",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Assetz Marq 3.1",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Assetz Marq 3.2",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Assetz Here & Now",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Assetz Soul & Soil",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Assetz 63 Degree East",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Assetz Bloom and Dell",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Assetz Canvas and Cove",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Century Seasons",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Assetz Atoms & Aura",
-            loc: "",
-            category: "residential",
-            status: "Executed",
-          },
-          {
-            name: "Assetz Sora Saki",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Century Midtown",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Assetz Promise of Springs",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-          {
-            name: "Century Liva",
-            loc: "",
-            category: "residential",
-            status: "Ongoing",
-          },
-
-          {
-            name: "SNS Plaza - Commercial Complex at Shivananda Circle",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "SNS Chambers - Commercial Complex at Sadashivanagar",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Century Nestar 1 - Hospitality Complex at Bannerghatta Road",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Century Nestar 2 - Hospitality Complex at Koramangala",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Century Meritz 1 - Hospitality Complex at M.G. Road",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Century Meritz 2 - Hospitality Complex at Whitefield",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Victoria Hospital - Centralized Testing LAB",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Mantralayam - Dining Hall at Mantralayam",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Arrow Thread India Pvt. Ltd.",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Niloufer Children's Hospital, Hyderabad",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Shankar Eye Hospital - Hospital Complex at Marathahalli",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Legacy House - Commercial Complex at Jakkur",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Legacy International School",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Infosys Foundation",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Vidyashilpa Academy",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Century Corbel Commercial",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Century Quadra",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Century Austral",
-            loc: "",
-            category: "commercial",
-            status: "Executed",
-          },
-          {
-            name: "Assetz Downtown",
-            loc: "",
-            category: "commercial",
-            status: "Ongoing",
-          },
-          {
-            name: "Century Artizan Club House",
-            loc: "",
-            category: "commercial",
-            status: "Ongoing",
-          },
-        ];
-
-        function svgPin() {
-          return '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s7-7.58 7-13A7 7 0 0 0 5 9c0 5.42 7 13 7 13z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>';
-        }
-        function svgArrow() {
-          return '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 19L19 5M19 5H9M19 5V15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-        }
-
-        function buildCard(p, idx) {
-          var card = document.createElement("div");
-
-          card.className = "pm-card";
-
-          card.setAttribute("data-name", p.name);
-          card.setAttribute("data-loc", p.loc);
-          card.setAttribute("data-status", p.status);
-          card.setAttribute("data-category", p.category);
-
-          var statusClass =
-            p.status.toLowerCase() === "completed" ||
-            p.status.toLowerCase() === "executed"
-              ? "completed"
-              : "ongoing";
-
-          card.innerHTML =
-            '<div class="pm-card-index">' +
-            "<span>N°" +
-            String(idx + 1).padStart(2, "0") +
-            "</span>" +
-            '<span class="pm-status ' +
-            statusClass +
-            '">' +
-            p.status +
-            "</span>" +
-            "</div>" +
-            "<h3>" +
-            p.name +
-            "</h3>" +
-            '<div class="pm-loc">' +
-            svgPin() +
-            "<span>" +
-            p.loc +
-            "</span>" +
-            "</div>" +
-            '<div class="pm-card-foot">' +
-            '<span class="pm-category">' +
-            p.category.charAt(0).toUpperCase() +
-            p.category.slice(1) +
-            "</span>" +
-            '<span class="pm-view">' +
-            "View Details " +
-            svgArrow() +
-            "</span>" +
-            "</div>";
-
-          return card;
-        }
-
-        function fillTrack(trackEl, list, offset) {
-          // duplicate the list twice for seamless infinite loop
-          var combined = list.concat(list);
-          combined.forEach(function (p, i) {
-            trackEl.appendChild(buildCard(p, (i + offset) % list.length));
-          });
-        }
-
-        var track1 = document.getElementById("pmTrack1");
-        var track2 = document.getElementById("pmTrack2");
-        var track3 = document.getElementById("pmTrack3");
-
-        function loadProjects(category) {
-          track1.innerHTML = "";
-          track2.innerHTML = "";
-          track3.innerHTML = "";
-
-          let filtered =
-            category === "all"
-              ? pmProjects
-              : pmProjects.filter((p) => p.category === category);
-
-          if (filtered.length === 0) {
-            filtered = pmProjects;
-          }
-
-          var row1 = filtered;
-          var row2 = filtered.slice(4).concat(filtered.slice(0, 4));
-          var row3 = filtered.slice(8).concat(filtered.slice(0, 8));
-
-          fillTrack(track1, row1, 0);
-          fillTrack(track2, row2, 0);
-          fillTrack(track3, row3, 0);
-
-          [track1, track2, track3].forEach((track) => {
-            track.querySelectorAll(".pm-card").forEach((card) => {
-              bindCardEvents(card, track);
-            });
-          });
-        }
-
-        loadProjects("all");
-
-        /* ---------------- PARTICLES ---------------- */
-        var particleHost = document.getElementById("pmParticles");
-        var pCount = window.innerWidth < 768 ? 14 : 28;
-        for (var i = 0; i < pCount; i++) {
-          var dot = document.createElement("div");
-          dot.className = "pm-particle";
-          dot.style.left = Math.random() * 100 + "%";
-          dot.style.animationDuration = 10 + Math.random() * 14 + "s";
-          dot.style.animationDelay = Math.random() * 14 + "s";
-          var size = (1.5 + Math.random() * 2.5).toFixed(1);
-          dot.style.width = size + "px";
-          dot.style.height = size + "px";
-          particleHost.appendChild(dot);
-        }
-
-        /* ---------------- SPOTLIGHT ---------------- */
-        var section = document.getElementById("pmSection");
-        var spotlight = document.getElementById("pmSpotlight");
-        section.addEventListener("mousemove", function (e) {
-          var rect = section.getBoundingClientRect();
-          var x = ((e.clientX - rect.left) / rect.width) * 100;
-          var y = ((e.clientY - rect.top) / rect.height) * 100;
-          spotlight.style.setProperty("--mx", x + "%");
-          spotlight.style.setProperty("--my", y + "%");
-        });
-
-        /* ---------------- CUSTOM CURSOR ---------------- */
-        var cursor = document.getElementById("pmCursor");
-        var ring = document.getElementById("pmCursorRing");
-        var hasGsap = typeof gsap !== "undefined";
-
-        document.addEventListener("mousemove", function (e) {
-          if (hasGsap) {
-            gsap.to(cursor, {
-              x: e.clientX,
-              y: e.clientY,
-              duration: 0.05,
-              overwrite: true,
-            });
-            gsap.to(ring, {
-              x: e.clientX,
-              y: e.clientY,
-              duration: 0.35,
-              ease: "power3.out",
-              overwrite: true,
-            });
-          } else {
-            cursor.style.transform =
-              "translate(" +
-              e.clientX +
-              "px," +
-              e.clientY +
-              "px) translate(-50%,-50%)";
-            ring.style.transform =
-              "translate(" +
-              e.clientX +
-              "px," +
-              e.clientY +
-              "px) translate(-50%,-50%)";
-          }
-        });
-
-        /* ---------------- CARD HOVER: pause row, tilt, ring grow ---------------- */
-        function bindCardEvents(card, track) {
-          card.addEventListener("mouseenter", function () {
-            track.classList.add("is-paused");
-            ring.classList.add("is-hover");
-          });
-          card.addEventListener("mousemove", function (e) {
-            var r = card.getBoundingClientRect();
-            var px = (e.clientX - r.left) / r.width - 0.5;
-            var py = (e.clientY - r.top) / r.height - 0.5;
-            var rotateY = px * 16;
-            var rotateX = -py * 16;
-            if (hasGsap) {
-              gsap.to(card, {
-                rotateY: rotateY,
-                rotateX: rotateX,
-                scale: 1.06,
-                duration: 0.4,
-                ease: "power3.out",
-                transformPerspective: 800,
-              });
-            } else {
-              card.style.transform =
-                "rotateY(" +
-                rotateY +
-                "deg) rotateX(" +
-                rotateX +
-                "deg) scale(1.06)";
+        function updateActiveCard() {
+          const viewportRect = viewport.getBoundingClientRect();
+          const center = viewportRect.left + viewportRect.width / 2;
+          let nearest = null;
+          let nearestDistance = Infinity;
+          track.querySelectorAll(".card").forEach((card) => {
+            const rect = card.getBoundingClientRect();
+            const distance = Math.abs(rect.left + rect.width / 2 - center);
+            if (distance < nearestDistance) {
+              nearest = card;
+              nearestDistance = distance;
             }
           });
-          card.addEventListener("mouseleave", function () {
-            track.classList.remove("is-paused");
-            ring.classList.remove("is-hover");
-            if (hasGsap) {
-              gsap.to(card, {
-                rotateY: 0,
-                rotateX: 0,
-                scale: 1,
-                duration: 0.5,
-                ease: "power3.out",
-              });
-            } else {
-              card.style.transform = "none";
-            }
-          });
-          card.addEventListener("click", function () {
-            openModal(
-              card.getAttribute("data-name"),
-              card.getAttribute("data-loc"),
-              card.getAttribute("data-status"),
-            );
-          });
-        }
-
-        /* NOTE: removed the old duplicate re-binding block that used to sit here
-       — loadProjects() already binds events to every card, so binding again
-       was attaching every listener twice (causing the modal to fire twice
-       per click, double GSAP tweens on hover, etc). */
-
-        /* ---------------- MODAL ---------------- */
-        var overlay = document.getElementById("pmOverlay");
-        var modal = document.getElementById("pmModal");
-        var modalClose = document.getElementById("pmModalClose");
-        var modalName = document.getElementById("pmModalName");
-        var modalLoc = document.getElementById("pmModalLoc");
-        var modalStatus = document.getElementById("pmModalStatus");
-
-        function openModal(name, loc, status) {
-          modalName.textContent = name;
-          modalLoc.textContent = loc;
-          modalStatus.textContent = status;
-          overlay.classList.add("active");
-          modal.classList.add("active");
-          if (hasGsap) {
-            gsap.fromTo(
-              modal,
-              { scale: 0.92, y: "-46%" },
-              { scale: 1, y: "-50%", duration: 0.5, ease: "power3.out" },
-            );
+          if (nearest && nearest !== activeCard) {
+            activeCard?.classList.remove("active");
+            nearest.classList.add("active");
+            activeCard = nearest;
           }
         }
+
+        function setModalPaused(paused) {
+          track.classList.toggle("is-paused", paused);
+        }
+
+        function openModal(index) {
+          const item = projects[index];
+          if (!item) return;
+          modalName.textContent = item.name;
+          modalLocation.textContent = item.location;
+          modalStatus.textContent = item.status;
+          modalProject.textContent = item.project;
+          modalDesc.textContent = `${item.name} is a ${item.project.toLowerCase()} project delivered by our team, currently marked as "${item.status}". Full project details, imagery, and specifications can be added here.`;
+          overlay.classList.add("open");
+          setModalPaused(true);
+        }
+
         function closeModal() {
-          overlay.classList.remove("active");
-          modal.classList.remove("active");
-        }
-        overlay.addEventListener("click", closeModal);
-        modalClose.addEventListener("click", closeModal);
-        document.addEventListener("keydown", function (e) {
-          if (e.key === "Escape") closeModal();
-        });
-
-        /* ---------------- GSAP scroll reveal for heading ---------------- */
-        if (hasGsap && typeof ScrollTrigger !== "undefined") {
-          gsap.registerPlugin(ScrollTrigger);
-          gsap.from(".pm-head .pm-tag, .pm-head h2, .pm-head p", {
-            scrollTrigger: { trigger: "#pmSection", start: "top 80%" },
-            y: 30,
-            opacity: 0,
-            duration: 0.9,
-            stagger: 0.12,
-            ease: "power3.out",
-          });
+          overlay.classList.remove("open");
+          setModalPaused(false);
         }
 
-        /* ---------------- TAB FILTER (now correctly inside the closure) -------- */
-        document.querySelectorAll(".pm-tab").forEach((tab) => {
-          tab.addEventListener("click", function () {
-            document.querySelector(".pm-tab.active").classList.remove("active");
-            this.classList.add("active");
-            loadProjects(this.dataset.filter);
-          });
+        track.addEventListener("click", (event) => {
+          const button = event.target.closest("[data-open]");
+          if (button) openModal(Number(button.dataset.open));
         });
+        document
+          .getElementById("modalClose")
+          .addEventListener("click", closeModal);
+        overlay.addEventListener("click", (event) => {
+          if (event.target === overlay) closeModal();
+        });
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape" && overlay.classList.contains("open"))
+            closeModal();
+        });
+
+        updateActiveCard();
+        const activeCardTimer = window.setInterval(updateActiveCard, 120);
+        window.addEventListener(
+          "pagehide",
+          () => window.clearInterval(activeCardTimer),
+          { once: true },
+        );
       })();
+    </script>
+    <script>
+      const raw = [
+        ["Legacy Celino", "Residential"],
+        ["Legacy Adonia", "Residential"],
+        ["Legacy Soreno", "Residential"],
+        ["Legacy Caldera", "Residential"],
+        ["Legacy Madelia", "Residential"],
+        ["Legacy Terrano", "Residential"],
+        ["Legacy Tierra", "Residential"],
+        ["Legacy Aura", "Residential"],
+        ["Legacy Ariston", "Residential"],
+        ["Legacy Casero", "Residential"],
+        ["Esterralla Terraces", "Residential"],
+        ["Century Corbel Residential", "Residential"],
+        ["Century Marvel", "Residential"],
+        ["Century Renata", "Residential"],
+        ["Century Indus Phase 1 & 2", "Residential"],
+        ["Century Artizan", "Residential"],
+        ["Century Vigneshwara Estates", "Residential"],
+        ["Pai Residence", "Residential"],
+        ["Century Paradise", "Residential"],
+        ["Century Pragathi", "Residential"],
+        ["Century Celeste", "Residential"],
+        ["Century Saras", "Residential"],
+        ["Century Chitrakut", "Residential"],
+        ["Century Chimes", "Residential"],
+        ["SNS Palace", "Residential"],
+        ["SNS Arcade", "Residential"],
+        ["SNS Orchid", "Residential"],
+        ["SNS Lavelle", "Residential"],
+        ["Century Sports Village", "Residential"],
+        ["Century Central", "Residential"],
+        ["Legacy Salvador", "Residential"],
+        ["Legacy Vivienda", "Residential"],
+        ["Assetz Marq 3.1", "Residential"],
+        ["Assetz Marq 3.2", "Residential"],
+        ["Assetz Here & Now", "Residential"],
+        ["Assetz Soul & Soil", "Residential"],
+        ["Assetz 63 Degree East", "Residential"],
+        ["Assetz Bloom and Dell", "Residential"],
+        ["Assetz Canvas and Cove", "Residential"],
+        ["Century Seasons", "Residential"],
+        ["Assetz Atoms & Aura", "Residential"],
+        ["Assetz Sora Saki", "Residential"],
+        ["Century Midtown", "Residential"],
+        ["Assetz Promise of Springs", "Residential"],
+        ["Century Liva", "Residential"],
+        ["SNS Plaza", "Commercial"],
+        ["SNS Chambers", "Commercial"],
+        ["Century Nestar 1", "Commercial"],
+        ["Century Nestar 2", "Commercial"],
+        ["Century Meritz 1", "Commercial"],
+        ["Century Meritz 2", "Commercial"],
+        ["Victoria Hospital", "Commercial"],
+        ["Mantralayam", "Commercial"],
+        ["Arrow Thread India Pvt. Ltd.", "Commercial"],
+        ["Niloufer Children's Hospital", "Commercial"],
+        ["Shankar Eye Hospital", "Commercial"],
+        ["Legacy House", "Commercial"],
+        ["Legacy International School", "Commercial"],
+        ["Infosys Foundation", "Commercial"],
+        ["Vidyashilpa Academy", "Commercial"],
+        ["Century Corbel Commercial", "Commercial"],
+        ["Century Quadra", "Commercial"],
+        ["Century Austral", "Commercial"],
+        ["Assetz Downtown", "Commercial"],
+        ["Century Artizan Club House", "Commercial"],
+      ];
+
+      const data = raw.map(([name, category]) => ({
+        cat: category.toLowerCase(),
+        name,
+        sub: category,
+        status: "Executed",
+      }));
+
+      const list = document.getElementById("list");
+
+      data.forEach((item) => {
+        const row = document.createElement("div");
+        row.dataset.cat = item.cat;
+        row.className =
+          "group relative opacity-0 translate-y-4 transition-all duration-700 ease-out";
+        row.innerHTML = `
+      <a href="#" class="flex items-center gap-4 md:gap-8 py-6 md:py-7 relative overflow-hidden">
+        <span class="flex-1 min-w-0">
+          <span class="block font-serif text-2xl md:text-4xl leading-tight tracking-tight text-white transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:text-accent">
+            ${item.name}
+          </span>
+          <span class="block font-mono text-[11px] uppercase tracking-widest text-white/40 mt-1.5 transition-transform duration-500 ease-out group-hover:translate-x-2">
+            ${item.sub}
+          </span>
+        </span>
+ 
+        <span class="hidden sm:flex items-center gap-2 shrink-0 font-mono text-[11px] uppercase tracking-widest text-white/50">
+          <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+          ${item.status}
+        </span>
+ 
+        <span class="font-mono text-lg text-white/20 transition-all duration-500 ease-out group-hover:text-accent group-hover:translate-x-1">
+          &#8594;
+        </span>
+ 
+        <span class="absolute left-0 bottom-0 h-px w-0 bg-accent transition-all duration-500 ease-out group-hover:w-full"></span>
+      </a>
+    `;
+        list.appendChild(row);
+      });
+
+      // derive counts from data, once, at load
+      const totalCount = data.length;
+      const residentialCount = data.filter(
+        (d) => d.cat === "residential",
+      ).length;
+      const commercialCount = data.filter((d) => d.cat === "commercial").length;
+
+      const pad = (n) => String(n).padStart(2, "0");
+      document.getElementById("countTotal").textContent = pad(totalCount);
+      document.getElementById("countResidential").textContent =
+        pad(residentialCount);
+      document.getElementById("countCommercial").textContent =
+        pad(commercialCount);
+      document.getElementById("tabCountAll").textContent =
+        `(${pad(totalCount)})`;
+      document.getElementById("tabCountResidential").textContent =
+        `(${pad(residentialCount)})`;
+      document.getElementById("tabCountCommercial").textContent =
+        `(${pad(commercialCount)})`;
+
+      // staggered entrance
+      const rows = Array.from(list.children);
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const idx = rows.indexOf(entry.target);
+              setTimeout(
+                () => {
+                  entry.target.classList.remove("opacity-0", "translate-y-4");
+                },
+                Math.min(idx, 8) * 60,
+              );
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      rows.forEach((r) => io.observe(r));
+      setTimeout(
+        () =>
+          rows.forEach((r) => r.classList.remove("opacity-0", "translate-y-4")),
+        1200,
+      );
+
+      // filtering
+      const tabs = document.querySelectorAll(".tab-btn");
+      const countTotal = document.getElementById("countTotal");
+      tabs.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.dataset.filter;
+          tabs.forEach((b) => {
+            const active = b === btn;
+            b.classList.toggle("text-accent", active);
+            b.classList.toggle("text-white/40", !active);
+            const underline = b.querySelector(".tab-underline");
+            underline.classList.toggle("w-full", active);
+            underline.classList.toggle("w-0", !active);
+          });
+
+          let visible = 0;
+          rows.forEach((row) => {
+            const show = filter === "all" || row.dataset.cat === filter;
+            row.style.display = show ? "" : "none";
+            if (show) visible++;
+          });
+          countTotal.textContent = pad(visible);
+        });
+      });
+
+      // live date
+      function updateClock() {
+        const el = document.getElementById("clock");
+        const now = new Date();
+        el.textContent = now.toLocaleDateString("en-IN", {
+          day: "2-digit",
+          month: "short",
+          year: "numeric",
+        });
+      }
+      updateClock();
     </script>
   </body>
 </html>
